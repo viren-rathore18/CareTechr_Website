@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareTechr Navbar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+</head>
+<body>
+    <!-- Main Navigation -->
+    <header class="navbar" id="navbar">
+        <nav class="nav-container" aria-label="Main navigation">
+            <!-- Logo -->
+           
+<div class="logo">
+    <a href="#" aria-label="CareTechr Home">
+        <img src="Assets/CareTechR_logo.png" alt="CareTechr" class="logo-img">
+    </a>
+</div>
+
+            <!-- Desktop Navigation Links -->
+            <ul class="nav-links" id="navLinks">
+                 <li><a href="index.html" class="nav-link">Home</a></li>
+                 <li><a href="about.html" class="nav-link">About</a></li>
+                 <li><a href="platform.html" class="nav-link">Platform</a></li>
+                 <li><a href="solutions.html" class="nav-link">Solutions</a></li>
+                 <li><a href="blog.html" class="nav-link">Blog</a></li>
+                 <li><a href="contact.html" class="nav-link">Contact</a></li>
+           </ul>
+
+            <!-- CTA Button -->
+            <div class="cta-container">
+                <button class="cta-button" id="demoBtn">Request Demo</button>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu Panel -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+       <div class="mobile-menu-content">
+          <ul class="mobile-nav-links"> <!-- Changed from nav-links to mobile-nav-links -->
+            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="about.html" class="mobile-nav-link">About</a></li>
+            <li><a href="platform.html" class="mobile-nav-link">Platform</a></li>
+            <li><a href="solutions.html" class="mobile-nav-link">Solutions</a></li>
+            <li><a href="blog.html" class="mobile-nav-link">Blog</a></li>
+            <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <button class="mobile-cta-button">Request Demo</button>
+    </div>
+  </div>
+    </header>
+
+
+    <!-- Hero section -->
+
+    <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Empowering Care Through Technology</h1>
+    <p>CareTechr bridges innovation and compassion — providing intelligent solutions that empower caregivers and enhance patient outcomes.</p>
+    <button class="hero-cta">Explore Our Platform</button>
+  </div>
+  <div class="hero-image">
+    <img src="Assets/dummy3.png" alt="CareTechr Hero Image">
+  </div>
+</section>
+
+
+<!-- Key Features Section -->
+<section class="key-features">
+  <div class="container">
+    <div class="features-header">
+      <h2>Why Choose <span class="highlight">CareTechr</span></h2>
+      <p>
+        Designed with empathy and powered by technology, CareTechr ensures your loved ones are never alone.
+      </p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-item">
+        <div class="feature-icon">
+          <i class="fa-solid fa-shield-heart"></i>
+        </div>
+        <h3>Always Protected</h3>
+        <p>Round-the-clock monitoring and intelligent alerts keep your loved ones safe every moment.</p>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <i class="fa-solid fa-hand-holding-heart"></i>
+        </div>
+        <h3>Deeply Connected</h3>
+        <p>Stay emotionally and digitally connected, no matter how far apart you are.</p>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <i class="fa-solid fa-heart-circle-check"></i>
+        </div>
+        <h3>Peace of Mind</h3>
+        <p>Know that care, comfort, and compassion are always within reach — powered by technology that cares.</p>
+      </div>
+    </div>
+
+    <div class="features-cta">
+      <button class="primary-cta">Get Started</button>
+      <button class="secondary-cta">Learn More</button>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="services">
+  <div class="container">
+    <div class="services-header">
+      <h4>Services We Provide</h4>
+      <h2>Professional Remote Patient Monitoring Services<br>You Can Choose</h2>
+    </div>
+
+    <div class="services-slider" id="servicesSlider">
+      <div class="service-card">
+        <div class="service-ribbon">Personal Safety</div>
+        <div class="service-body">
+          <i class="fa-solid fa-shield-heart"></i>
+          <p>Instant alerts and support to keep patients safe at home or on the go.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-ribbon">Health Monitoring</div>
+        <div class="service-body">
+          <i class="fa-solid fa-heart-pulse"></i>
+          <p>Track vitals and wellness in real time for early intervention and peace of mind.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-ribbon">Medication Reminders</div>
+        <div class="service-body">
+          <i class="fa-solid fa-capsules"></i>
+          <p>Timely alerts ensure medications are taken correctly and on schedule.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-ribbon">Medical Records</div>
+        <div class="service-body">
+          <i class="fa-solid fa-file-medical"></i>
+          <p>Securely store and access medical history, prescriptions, and reports in one place.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-ribbon">Appointments</div>
+        <div class="service-body">
+          <i class="fa-solid fa-calendar-check"></i>
+          <p>Easily book and track medical appointments to stay organized and on time.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Brand Ribbon Section -->
+<section class="brand-ribbon">
+  <div class="ribbon-content">
+    <h3>At <span>CareTechr</span>, we prioritize the health and well-being of every patient</h3>
+  </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="why-choose-us">
+  <div class="container">
+    <div class="why-header">
+      <h4>Why Choose Us</h4>
+      <h2>Because You Can’t Always Be There.<br>But We Can.</h2>
+      <p>
+        At <span>CareTechr</span>, we understand the unique needs of older adults and their families.
+        Our solutions are designed with simplicity, safety, and dignity in mind — 
+        so patients can live independently, and loved ones can worry less.
+      </p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-image">
+          <img src="Assets/caregiver_elderlyperson.png" alt="Peace of Mind" />
+        </div>
+        <div class="why-overlay">
+          <h3>Peace of Mind</h3>
+          <p>Real-time alerts and updates for families.</p>
+        </div>
+      </div>
+
+      <div class="why-card">
+        <div class="why-image">
+          <img src="Assets/caregiver_elderlyperson.png" alt="Independence" />
+        </div>
+        <div class="why-overlay">
+          <h3>Independence</h3>
+          <p>Seniors stay confident, independent, and in control of daily living.</p>
+        </div>
+      </div>
+
+      <div class="why-card">
+        <div class="why-image">
+          <img src="Assets/caregiver_elderlyperson.png" alt="Trust and Transparency" />
+        </div>
+        <div class="why-overlay">
+          <h3>Trust & Transparency</h3>
+          <p>Data shared securely with only authorized contacts.</p>
+        </div>
+      </div>
+
+      <div class="why-card">
+        <div class="why-image">
+          <img src="Assets/caregiver_elderlyperson.png" alt="Designed with Compassion" />
+        </div>
+        <div class="why-overlay">
+          <h3>Designed with Compassion</h3>
+          <p>Not just tech — empathy is built in at every step.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+  <div class="testimonials-container">
+    <!-- Left Image -->
+    <div class="testimonial-image">
+      <img src="Assets/Dummy2.png" alt="Caregiver with elderly patient" />
+    </div>
+
+    <!-- Right Content -->
+    <div class="testimonial-content">
+      <h5>Testimonials</h5>
+      <h2>What Our Clients Say<br>About Our Care</h2>
+
+      <!-- Testimonial Slider -->
+      <div class="testimonial-box">
+        <div class="testimonial-text" id="testimonial-text">
+          <!-- Testimonials will slide automatically -->
+          <p>"I sleep better knowing my father is safe and cared for, even when I'm miles away."</p>
+          <div class="stars">★★★★★</div>
+          <h4>— Sarah, Boston</h4>
+        </div>
+      </div>
+
+      <button class="testimonial-btn">See More Stories</button>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA Section -->
+<section class="cta-section">
+  <div class="cta-overlay"></div>
+  <div class="cta-content">
+    <h2>Find the Right Support for Your Loved One</h2>
+    <p>
+      Book a quick consultation and discover how <span>CareTechr</span> can 
+      support your care journey with personalized solutions that fit your needs.
+    </p>
+    <button class="cta-btn">Contact Us</button>
+  </div>
+</section>
+
+
+<!-- FAQ Section -->
+<section class="faq-section">
+  <div class="faq-container">
+    <!-- Left Column: Accordion -->
+    <div class="faq-left">
+      <h2>Got Questions? <br><span>We’re Here.</span></h2>
+
+      <div class="faq-item active">
+        <div class="faq-question">
+          <div class="faq-number">01</div>
+          <p>Is the app only for seniors?</p>
+          <span class="faq-toggle">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>
+            Not at all! While CareTechr is designed with seniors in mind, 
+            families, caregivers, and healthcare professionals can also use it 
+            to monitor and support loved ones remotely.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <div class="faq-number">02</div>
+          <p>What happens if the internet is down?</p>
+          <span class="faq-toggle">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>
+            The app securely stores key information offline and syncs data 
+            automatically once the internet connection is restored.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <div class="faq-number">03</div>
+          <p>Is my data safe?</p>
+          <span class="faq-toggle">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>
+            Yes! CareTechr uses end-to-end encryption and complies with HIPAA 
+            and GDPR to ensure your personal data remains private and secure.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <div class="faq-number">04</div>
+          <p>Is it hard to use?</p>
+          <span class="faq-toggle">▼</span>
+        </div>
+        <div class="faq-answer">
+          <p>
+            Not at all! The interface is simple, intuitive, and built to 
+            accommodate all levels of tech experience — even for seniors.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Image -->
+    <div class="faq-right">
+      <img src="Assets/dummy3.png" alt="Caregiver helping senior" />
+    </div>
+  </div>
+</section>
+
+
+<!-- HOW IT WORKS SECTION -->
+<section class="how-section">
+  <div class="how-container">
+    <div class="how-header">
+      <h2>Easy as saying a ‘Hello’. Powerful as Hope – of living life on your terms!</h2>
+      <p>
+        We designed <span>CareTechr</span> to be simple and seamless. Whether you're 16 or 61, 
+        setup is quick, support is accessible, and connection feels effortless — all with just a tap.
+      </p>
+    </div>
+
+    <div class="how-content">
+      <!-- Left: Key Benefits -->
+      <div class="how-left">
+        <h3>How It Works</h3>
+        <p class="subheading">Key Benefits:</p>
+        <ul class="benefits">
+          <li><i class="fa-solid fa-bell"></i> Auto Fall Detection & Alerts</li>
+          <li><i class="fa-solid fa-heart-pulse"></i> Health Monitoring & Reminders</li>
+          <li><i class="fa-solid fa-microphone"></i> SOS & Voice Activated Help</li>
+          <li><i class="fa-solid fa-location-dot"></i> Real-time Location Tracking</li>
+          <li><i class="fa-solid fa-people-group"></i> Family Dashboard Access</li>
+        </ul>
+        <button class="how-btn">Talk to Our Team</button>
+      </div>
+
+      <!-- Right: Steps -->
+      <div class="how-right">
+        <h3>Steps</h3>
+        <ul class="steps">
+          <li>
+            <i class="fa-solid fa-download"></i>
+            <p><strong>Download & Install</strong> — Available on Android (iOS coming soon).</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-user-plus"></i>
+            <p><strong>Add Emergency Contacts</strong> — Family, friends, or caregivers who care.</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-gear"></i>
+            <p><strong>Set Preferences</strong> — Choose sensitivity, geofencing, and alerts.</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-wifi"></i>
+            <p><strong>Stay Connected</strong> — Get updates, alerts, and insights automatically.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- FEATURES / LIFELINE SECTION -->
+<section class="lifeline-section">
+  <div class="lifeline-overlay"></div>
+
+  <div class="lifeline-container">
+    <h2><span>More Than an App.</span> It’s a Lifeline.</h2>
+
+    <div class="lifeline-content">
+      <!-- Left Feature Card -->
+      <div class="lifeline-card">
+        <ul>
+          <li>
+            <strong><i class="fa-solid fa-person-falling"></i> Fall Detection:</strong>
+            <p>
+              Every second counts. Smart sensors detect sudden falls and send alerts within seconds 
+              to those who care the most.
+            </p>
+          </li>
+          <li>
+            <strong><i class="fa-solid fa-microphone-lines"></i> SOS & Voice SOS:</strong>
+            <p>
+              Can’t reach your phone? Just say “Help me!” and our system triggers an instant SOS 
+              call to emergency contacts.
+            </p>
+          </li>
+          <li>
+            <strong><i class="fa-solid fa-car-burst"></i> Crash Detection:</strong>
+            <p>
+              In case of an accident, your live location is automatically shared with family and caregivers.
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right Feature Card -->
+      <div class="lifeline-card">
+        <ul>
+          <li>
+            <strong><i class="fa-solid fa-heart-pulse"></i> Health Monitoring:</strong>
+            <p>
+              Track blood pressure, sugar, oxygen, heart rate & more — all in real-time with loved ones.
+            </p>
+          </li>
+          <li>
+            <strong><i class="fa-solid fa-bell"></i> Inactivity Alerts:</strong>
+            <p>
+              Too quiet for too long? The system notifies caregivers so silence never goes unnoticed.
+            </p>
+          </li>
+          <li>
+            <strong><i class="fa-solid fa-location-dot"></i> Geo-fencing & Live Location:</strong>
+            <p>
+              If a senior steps outside a safe zone, alerts are sent instantly with their exact location.
+            </p>
+          </li>
+          <li>
+            <strong><i class="fa-solid fa-volume-high"></i> Noise Alerts & Battery Warnings:</strong>
+            <p>
+              Detects distress sounds and sends reminders to charge devices — ensuring support never fails.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="lifeline-cta">
+      <button class="lifeline-btn">Explore Full Range of Features</button>
+      <p class="compatibility">
+        <strong>Device Compatibility:</strong> Works with Android, Samsung Health, and wearable devices.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+  <div class="contact-container">
+    <!-- Left Side: Form -->
+    <div class="contact-left">
+      <h2>We’d Love to Hear From You</h2>
+
+      <form class="contact-form" action="#" method="post">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="first-name">First name *</label>
+            <input type="text" id="first-name" name="first-name" required />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last name</label>
+            <input type="text" id="last-name" name="last-name" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+        </div>
+
+        <button type="submit" class="contact-btn">Submit</button>
+      </form>
+    </div>
+
+    <!-- Right Side: Image -->
+    <div class="contact-right">
+      <img src="Assets/Dummy2.png" alt="CareTechr Nurse with Patient" />
+    </div>
+  </div>
+</section>
+
+
+
+<!-- BLOG SECTION -->
+<section class="blog-section">
+  <div class="blog-container">
+    <div class="blog-header">
+      <span class="blog-subtitle">Latest News & Blog</span>
+      <h2>Get Every Single Update For Medical & Health</h2>
+    </div>
+
+    <div class="blog-grid" id="blog-grid">
+      <!-- Blog cards will populate dynamically -->
+      <article class="blog-card">
+        <div class="blog-image">
+          <img src="Assets/dummy3.png" alt="Empowering Seniors" />
+        </div>
+        <div class="blog-overlay"></div>
+        <div class="blog-content">
+          <p class="meta">CareTechr Team • 4 min read</p>
+          <h3>Empowering Seniors: CareTechr’s Health & Wellness Solutions</h3>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-image">
+          <img src="Assets/dummy3.png" alt="Emergency Response" />
+        </div>
+        <div class="blog-overlay"></div>
+        <div class="blog-content">
+          <p class="meta">CareTechr Team • 5 min read</p>
+          <h3>Revolutionizing Emergency Response for Vulnerable Groups</h3>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-image">
+          <img src="Assets/dummy3.png" alt="Assistive Tech" />
+        </div>
+        <div class="blog-overlay"></div>
+        <div class="blog-content">
+          <p class="meta">CareTechr Team • 4 min read</p>
+          <h3>Tech-Driven Independence: CareTechr’s Assistive Technologies</h3>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="caretechr-newsletter">
+  <div class="caretechr-newsletter__container">
+    <div class="caretechr-newsletter__text">
+      <h2>Subscribe to the <span>CareTechr Newsletter</span></h2>
+      <p>Stay informed about remote patient monitoring, new innovations, and digital care updates from CareTechr.</p>
+    </div>
+
+    <form class="caretechr-newsletter__form">
+      <input type="email" placeholder="Enter your email address" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Logo -->
+    <div class="footer-logo">
+      <img src="Assets/CareTechR_logo.png" alt="myCareShield Logo" />
+      <h3>CareTechr</h3>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+
+      <div class="footer-location">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <p><strong>Portugal Office</strong></p>
+          <p>Rua Dom João IV 400, 4000-300 Porto, Portugal</p>
+        </div>
+      </div>
+
+      <div class="footer-location">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <p><strong>India Office</strong></p>
+          <p>B-361, Chittaranjan Park, New Delhi, 110019, India</p>
+        </div>
+      </div>
+
+      <div class="footer-contact-info">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:info@mycareshield.com">info@mycareshield.com</a>
+      </div>
+
+      <div class="footer-contact-info">
+        <i class="fas fa-phone-alt"></i>
+        <p>+351 912 345 678 (Portugal)</p>
+        <p>+91 7303819745 (India)</p>
+      </div>
+
+      <!-- Socials -->
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 CareTechr. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+    <script src="navbar.js"></script>
+    <script src="services.js"></script>
+    <script>
+  const testimonials = [
+    {
+      text: '"I sleep better knowing my father is safe and cared for, even when I’m miles away."',
+      author: "— Sarah, Boston",
+    },
+    {
+      text: '"CareTechr helps my mom stay independent while keeping me informed in real-time."',
+      author: "— Rajesh, Mumbai",
+    },
+    {
+      text: '"A perfect blend of technology and compassion. I can’t imagine life without it now."',
+      author: "— Elena, Toronto",
+    },
+  ];
+
+  let index = 0;
+  const textBox = document.getElementById("testimonial-text");
+
+  function updateTestimonial() {
+    const { text, author } = testimonials[index];
+    textBox.classList.add("fade-out");
+    setTimeout(() => {
+      textBox.innerHTML = `
+        <p>${text}</p>
+        <div class="stars">★★★★★</div>
+        <h4>${author}</h4>
+      `;
+      textBox.classList.remove("fade-out");
+      textBox.classList.add("fade-in");
+    }, 400);
+    index = (index + 1) % testimonials.length;
+  }
+
+  setInterval(updateTestimonial, 5000);
+</script>
+
+<style>
+  .fade-out {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+</style>
+
+<!-- according js -->
+<script>
+  const faqs = document.querySelectorAll('.faq-item');
+
+  faqs.forEach((faq) => {
+    faq.querySelector('.faq-question').addEventListener('click', () => {
+      faqs.forEach((item) => {
+        if (item !== faq) item.classList.remove('active');
+      });
+      faq.classList.toggle('active');
+    });
+  });
+</script>
+
+
+<!-- blog fetching code from wordpress to be done -->
+<script>
+  const blogGrid = document.getElementById("blog-grid");
+
+  async function loadPosts() {
+    try {
+      const res = await fetch("https://yourdomain.com/wp-json/wp/v2/posts?_embed&per_page=3");
+      const posts = await res.json();
+
+      blogGrid.innerHTML = posts
+        .map(
+          (post) => `
+          <article class="blog-card" onclick="window.open('${post.link}', '_blank')">
+            <div class="blog-image">
+              <img src="${post._embedded['wp:featuredmedia']?.[0]?.source_url || 'Assets/default.jpg'}" alt="${post.title.rendered}" />
+            </div>
+            <div class="blog-overlay"></div>
+            <div class="blog-content">
+              <p class="meta">${post._embedded.author?.[0]?.name || 'CareTechr Team'} • ${Math.floor(Math.random() * 3) + 3} min read</p>
+              <h3>${post.title.rendered}</h3>
+            </div>
+          </article>
+        `
+        )
+        .join("");
+    } catch (error) {
+      console.error("Error loading posts:", error);
+    }
+  }
+
+  loadPosts();
+</script>
+
+
+<!-- Newsletter Hook code to be integrated -->
+
+<script>
+  document.getElementById("newsletter-form").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const email = document.getElementById("newsletter-email").value.trim();
+    if (!email) return;
+
+    try {
+      // Example endpoint (replace with your real one)
+      await fetch("https://yourdomain.com/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+      alert("🎉 Thanks for subscribing!");
+      e.target.reset();
+    } catch (err) {
+      console.error("Subscription error:", err);
+      alert("Something went wrong. Please try again later.");
+    }
+  });
+</script>
+
+
+
+</body>
+</html>

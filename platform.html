@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+    <title>CareTechr Navbar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body class="platform-page">
+    <!-- Main Navigation -->
+    <header class="navbar" id="navbar">
+        <nav class="nav-container" aria-label="Main navigation">
+            <!-- Logo -->
+           
+<div class="logo">
+    <a href="#" aria-label="CareTechr Home">
+        <img src="Assets/CareTechR_logo.png" alt="CareTechr" class="logo-img">
+    </a>
+</div>
+
+            <!-- Desktop Navigation Links -->
+            <ul class="nav-links" id="navLinks">
+                 <li><a href="index.html" class="nav-link">Home</a></li>
+                 <li><a href="about.html" class="nav-link">About</a></li>
+                 <li><a href="platform.html" class="nav-link">Platform</a></li>
+                 <li><a href="solutions.html" class="nav-link">Solutions</a></li>
+                 <li><a href="blog.html" class="nav-link">Blog</a></li>
+                 <li><a href="contact.html" class="nav-link">Contact</a></li>
+           </ul>
+
+            <!-- CTA Button -->
+            <div class="cta-container">
+                <button class="cta-button" id="demoBtn">Request Demo</button>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu Panel -->
+        <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-content">
+        <ul class="mobile-nav-links"> <!-- Changed from nav-links to mobile-nav-links -->
+            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="about.html" class="mobile-nav-link">About</a></li>
+            <li><a href="platform.html" class="mobile-nav-link">Platform</a></li>
+            <li><a href="solutions.html" class="mobile-nav-link">Solutions</a></li>
+            <li><a href="blog.html" class="mobile-nav-link">Blog</a></li>
+            <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <button class="mobile-cta-button">Request Demo</button>
+    </div>
+</div>
+    </header>
+
+    
+<script src="navbar.js" defer></script>
+</body>
+</html>
