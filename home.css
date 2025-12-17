@@ -1075,16 +1075,13 @@ html, body {
 }
 
 
-
-
-
 /* =========================
    HOW IT WORKS SECTION
 ========================= */
 
 .how-section {
   background-color: var(--brand-lavender);
-  padding: 6rem 2rem;
+  padding: 4rem 1.5rem;
   color: var(--brand-dark);
 }
 
@@ -1124,15 +1121,16 @@ html, body {
 .how-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: start;
+  gap: 2.5rem;            /* more breathing space between columns */
+  align-items: start;     /* keeps both columns top-aligned */
+  justify-content: space-between;
 }
 
 /* LEFT SIDE (Benefits) */
 .how-left h3 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
   color: var(--brand-dark);
 }
 
@@ -1145,8 +1143,10 @@ html, body {
 .benefits {
   list-style: none;
   padding: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
+
+
 
 .benefits li {
   display: flex;
@@ -1188,7 +1188,7 @@ html, body {
   background: var(--brand-purple);
   color: #fff;
   border-radius: 20px;
-  padding: 2.5rem 2rem;
+  padding: 2rem 1.8rem;
   box-shadow: 0 12px 25px rgba(82, 41, 117, 0.25);
 }
 
@@ -1206,7 +1206,7 @@ html, body {
 .steps li {
   display: flex;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 0.8rem;
   margin-bottom: 1.5rem;
   line-height: 1.6;
 }
@@ -1241,22 +1241,29 @@ html, body {
 }
 
 @media (max-width: 600px) {
+  .how-section {
+    padding: 3rem 1rem;
+  }
+
+  .how-content {
+    gap: 1.5rem;
+  }
+
+  .how-right {
+    margin-top: 1.5rem;
+    padding: 1.8rem 1.4rem;
+  }
+
   .how-header h2 {
     font-size: 1.7rem;
   }
 
-  .benefits li {
-    font-size: 1rem;
-  }
-
-  .steps p {
-    font-size: 0.95rem;
-  }
-
   .how-btn {
     width: 100%;
+    max-width: 320px;
   }
 }
+
 
 
 
@@ -1441,6 +1448,7 @@ html, body {
 .contact-section {
   background: #e9edf2;
   padding: 6rem 2rem;
+  overflow-x: hidden;
 }
 
 .contact-container {
@@ -1592,6 +1600,73 @@ textarea:focus {
   }
 }
 
+/* =========================
+   CONTACT SECTION – MOBILE FIX
+========================= */
+
+/* Make sure form content never exceeds viewport width */
+.contact-form,
+.contact-form * {
+  box-sizing: border-box;
+}
+
+/* Prevent horizontal scroll on any screen */
+.contact-section {
+  overflow-x: hidden;
+}
+
+/* Tighter spacing on smaller devices */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 3rem 1rem;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    justify-items: center;
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: 500px;
+    padding: 1.5rem;
+    margin: 0 auto;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contact-btn {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contact-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
+
+/* Extra safety for very small phones */
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 1.2rem;
+  }
+
+  .contact-left h2 {
+    font-size: 1.5rem;
+  }
+}
 
 
 /* =========================
