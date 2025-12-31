@@ -11,6 +11,186 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
    
+    <style>
+        /* =========================
+   CONTACT PAGE (CareTechr)
+========================= */
+
+.contact-page {
+  background: linear-gradient(135deg, #522975, #3e1e5a);
+  color: #fff;
+  padding: 6rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+}
+
+/* Left Side Info */
+.contact-info h2 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  color: #eae4f5;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.info-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-block i {
+  font-size: 1.5rem;
+  color: #d4c5e0;
+}
+
+.info-block h4 {
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: #fff;
+}
+
+.info-block p {
+  color: #eae4f5;
+  font-size: 0.95rem;
+}
+
+/* Social Links */
+.social-links h4 {
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  color: #fff;
+}
+
+.social-links .icons {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.social-links a {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: #d4c5e0;
+  color: #3e1e5a;
+  transform: translateY(-3px);
+}
+
+/* Right Side Form */
+.contact-form {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.contact-form:hover {
+  box-shadow: 0 12px 35px rgba(99, 50, 136, 0.4);
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: 600;
+  color: #eae4f5;
+  margin-bottom: 0.4rem;
+}
+
+input,
+textarea {
+  border: none;
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #2d1b3d;
+  background: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(212, 197, 224, 0.6);
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #fff;
+  background: linear-gradient(135deg, #d4c5e0, #522975);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #eae4f5;
+  color: #3e1e5a;
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .social-links .icons {
+    justify-content: center;
+  }
+}
+
+
+
+    </style>
+
 </head>
 <body class="contact-page">
     <!-- Main Navigation -->
@@ -63,6 +243,83 @@
 </div>
      
     </header>
+
+
+    <section class="contact-page">
+  <div class="contact-container">
+    <!-- Left Column -->
+    <div class="contact-info">
+      <h2>Get in Touch with Us</h2>
+      <p>
+        Have questions or need help choosing the right care solution? 
+        We're here for you. Reach out today — we’d love to support you 
+        or your loved one.
+      </p>
+
+      <div class="info-block">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <h4>Address</h4>
+          <p>100 Summit Dr, Burlington, MA 01803</p>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <h4>Email</h4>
+          <p>info@mycareshield.com</p>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <i class="fas fa-phone"></i>
+        <div>
+          <h4>Phone</h4>
+          <p>+1 781-866-4863</p>
+        </div>
+      </div>
+
+      <div class="social-links">
+        <h4>Follow Us</h4>
+        <div class="icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="contact-form">
+      <form>
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name *</label>
+            <input type="text" placeholder="John" required />
+          </div>
+          <div class="form-group">
+            <label>Last Name *</label>
+            <input type="text" placeholder="Doe" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Email *</label>
+          <input type="email" placeholder="you@example.com" required />
+        </div>
+
+        <div class="form-group">
+          <label>Message</label>
+          <textarea rows="4" placeholder="Write your message..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
 
     
 

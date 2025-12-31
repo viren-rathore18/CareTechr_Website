@@ -1,0 +1,507 @@
+/* =========================
+   ABOUT HERO SECTION (CareTechr Brand)
+========================= */
+
+.about-hero {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  padding: 6rem 2rem 8rem;
+}
+
+/* Background Image Layer */
+.about-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.about-hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Overlay (refined brand gradient) */
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(99, 50, 136, 0.75),
+    rgba(82, 41, 117, 0.75)
+  );
+  z-index: 1;
+}
+
+/* Content */
+.about-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  width: 100%;
+}
+.about-hero-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+  color: #ffffff;
+}
+
+/* Vision / Mission Cards */
+.about-hero-cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* ✨ Updated card design using purple-blue gradient */
+.about-card {
+  flex: 1 1 380px;
+  background: linear-gradient(145deg, #5b2f8a, #3a2065);
+  border-radius: 2.2rem;
+  padding: 2rem 2.5rem;
+  color: #ffffff;
+  box-shadow: 0 10px 25px rgba(82, 41, 117, 0.3);
+  transition: all 0.3s ease;
+}
+.about-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(99, 50, 136, 0.4);
+}
+
+.about-card h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #b8d2ff; /* soft bluish highlight for balance */
+  margin-bottom: 1rem;
+}
+.about-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #f4f0fa;
+}
+
+/* Responsive Fix */
+@media (max-width: 992px) {
+  .about-hero {
+    padding: 4rem 1.5rem 6rem;
+  }
+  .about-hero-content h1 {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 600px) {
+  .about-hero-content h1 {
+    font-size: 2rem;
+  }
+  .about-hero-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .about-card {
+    max-width: 100%;
+  }
+}
+
+
+/* =========================
+   FOUNDERS SECTION
+========================= */
+
+.founders-section {
+  background: linear-gradient(180deg, #f9f8ff 0%, #f2edf7 100%);
+  padding: 5rem 2rem;
+  color: var(--brand-dark);
+  overflow: hidden;
+}
+
+.founders-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.founders-header h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--brand-dark);
+  line-height: 1.4;
+}
+
+/* Founder Layout */
+.founder {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto 5rem;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(99, 50, 136, 0.1);
+  padding: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.founder:hover {
+  box-shadow: 0 15px 35px rgba(99, 50, 136, 0.15);
+  transform: translateY(-3px);
+}
+
+/* Founder Images */
+.founder-image img {
+  width: 75%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(82, 41, 117, 0.15);
+  object-fit: cover;
+}
+
+/* Founder Text */
+.founder-content h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--brand-purple);
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.founder-content h3 span {
+  color: var(--brand-dark);
+  font-weight: 600;
+}
+
+.founder-content p {
+  color: var(--muted-gray);
+  line-height: 1.7;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.founder-link {
+  color: var(--brand-purple);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.founder-link:hover {
+  color: var(--brand-dark);
+  text-decoration: underline;
+}
+
+/* Alternate layout (swap image and text) */
+.founder-right {
+  grid-template-columns: 1fr 1fr;
+}
+
+.founder-right .founder-image {
+  order: 2;
+}
+
+.founder-right .founder-content {
+  order: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .founder {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .founder-image {
+    order: -1 !important;
+    margin-bottom: 1.5rem;
+  }
+
+  .founder-content h3 {
+    font-size: 1.4rem;
+  }
+}
+
+
+/* =========================
+   WHY CHOOSE US SECTION (CareTechr Themed)
+========================= */
+
+.why-section {
+  background: linear-gradient(180deg, #522975, #3e1e5a);
+  color: #fff;
+  padding: 6rem 2rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.why-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Subtitle */
+.why-subtitle {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #d4c5e0;
+  letter-spacing: 1px;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Main Heading */
+.why-container h2 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+/* Description */
+.why-description {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  font-size: 1rem;
+  color: #eae4f5;
+  line-height: 1.7;
+}
+
+/* Grid Layout */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* Individual Cards */
+.why-card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 340px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 20px rgba(82, 41, 117, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(99, 50, 136, 0.35);
+}
+
+/* Card Image */
+.why-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Card Body */
+.why-card-body {
+  background: #d4c5e0; /* CareTechr lavender */
+  padding: 1.5rem 1.2rem;
+  color: #2d1b3d;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-top: 4px solid #522975;
+  transition: background 0.3s ease;
+}
+
+.why-card-body h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #2d1b3d;
+}
+
+.why-card-body p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #3e1e5a;
+}
+
+/* Hover Interaction */
+.why-card:hover .why-card-body {
+  background: #eae4f5;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .why-container h2 {
+    font-size: 2rem;
+  }
+
+  .why-description {
+    font-size: 0.95rem;
+  }
+
+  .why-grid {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .why-card {
+    max-width: 100%;
+    min-height: auto;
+  }
+
+  .why-card img {
+    height: 160px;
+  }
+
+  .why-card-body {
+    padding: 1.2rem;
+  }
+}
+
+
+/* =========================
+   CARETECHR FOOTER — LIGHT BACKGROUND VARIANT
+========================= */
+
+.footer {
+  background: #f9f8ff; /* soft lavender to separate from newsletter */
+  color: var(--brand-dark);
+  padding: 3rem 2rem 1.5rem;
+  border-top: 4px solid #633288; /* subtle brand accent line */
+  box-shadow: 0 -4px 12px rgba(99, 50, 136, 0.08);
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1.4fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+/* --- Logo --- */
+.footer-logo {
+  text-align: center;
+}
+
+.footer-logo img {
+  width: 110px;
+  margin-bottom: 0.8rem;
+}
+
+.footer-logo h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--brand-purple);
+}
+
+/* --- Quick Links --- */
+.footer-links h4,
+.footer-contact h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--brand-dark);
+  margin-bottom: 1rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-links ul li a {
+  color: var(--brand-dark);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: var(--brand-purple);
+}
+
+/* --- Contact Info --- */
+.footer-contact p,
+.footer-contact a {
+  color: var(--muted-gray);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: var(--brand-purple);
+}
+
+.footer-contact i {
+  color: var(--brand-purple);
+  margin-right: 0.6rem;
+}
+
+/* --- Social Icons --- */
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.footer-socials a {
+  color: var(--brand-dark);
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: var(--brand-purple);
+}
+
+/* --- Bottom Bar --- */
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(99, 50, 136, 0.15);
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--muted-gray);
+}
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+}
