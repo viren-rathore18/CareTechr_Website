@@ -6,10 +6,11 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>CareTechr Navbar</title>
+    <title>Contact CareTechr - Get in Touch</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    
    
     <style>
         /* =========================
@@ -20,9 +21,12 @@
   background: linear-gradient(135deg, #522975, #3e1e5a);
   color: #fff;
   padding: 6rem 2rem;
+  margin-top: 80px; /* offset fixed navbar */
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 80vh;
+  width: 100%;
 }
 
 .contact-container {
@@ -192,14 +196,14 @@ textarea:focus {
     </style>
 
 </head>
-<body class="contact-page">
+<body>
     <!-- Main Navigation -->
     <header class="navbar" id="navbar">
         <nav class="nav-container" aria-label="Main navigation">
             <!-- Logo -->
            
 <div class="logo">
-    <a href="#" aria-label="CareTechr Home">
+    <a href="index.html" aria-label="CareTechr Home">
         <img src="Assets/CareTechR_logo.png" alt="CareTechr" class="logo-img">
     </a>
 </div>
@@ -321,8 +325,77 @@ textarea:focus {
   </div>
 </section>
 
-    
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Logo -->
+    <div class="footer-logo">
+      <img src="Assets/CareTechR_logo.png" alt="CareTechr Logo" />
+      <h3>CareTechr</h3>
+      <p>Empowering care through technology, one family at a time.</p>
+    </div>
 
-<script src="navbar.js" defer></script>
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="platform.html">Platform</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+      </ul>
+    </div>
+
+    <!-- Resources -->
+    <div class="footer-links">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+
+      <div class="footer-location">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <p><strong>Portugal Office</strong></p>
+          <p>Rua Dom João IV 400, 4000-300 Porto, Portugal</p>
+        </div>
+      </div>
+
+      <div class="footer-contact-info">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:info@caretechr.com">info@caretechr.com</a>
+      </div>
+
+      <div class="footer-contact-info">
+        <i class="fas fa-phone-alt"></i>
+        <p>+351 912 345 678</p>
+      </div>
+
+      <!-- Socials -->
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 CareTechr. All rights reserved.</p>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Service</a>
+  </div>
+</footer>
+
+    <script src="navbar.js" defer></script>
 </body>
 </html>

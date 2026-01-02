@@ -6,11 +6,10 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>CareTechr Navbar</title>
+    <title>Blog - CareTechr Health & Wellness Insights</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-   
+    <link rel="stylesheet" href="home.css">
 
     <style>
 /* =========================
@@ -156,90 +155,8 @@
 
 
 /* =========================
-   CARETECHR FOOTER — LIGHT BACKGROUND VARIANT
-========================= */
 
-.footer {
-  background: #f9f8ff; /* soft lavender to separate from newsletter */
-  color: var(--brand-dark);
-  padding: 3rem 2rem 1.5rem;
-  border-top: 4px solid #633288; /* subtle brand accent line */
-  box-shadow: 0 -4px 12px rgba(99, 50, 136, 0.08);
-  font-family: 'Poppins', sans-serif;
-}
-
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1.2fr 1fr 1.4fr;
-  gap: 2.5rem;
-  align-items: start;
-}
-
-/* --- Logo --- */
-.footer-logo {
-  text-align: center;
-}
-
-.footer-logo img {
-  width: 110px;
-  margin-bottom: 0.8rem;
-}
-
-.footer-logo h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--brand-purple);
-}
-
-/* --- Quick Links --- */
-.footer-links h4,
-.footer-contact h4 {
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--brand-dark);
-  margin-bottom: 1rem;
-}
-
-.footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-links ul li {
-  margin-bottom: 0.6rem;
-}
-
-.footer-links ul li a {
-  color: var(--brand-dark);
-  text-decoration: none;
-  font-size: 0.95rem;
-  transition: color 0.3s ease;
-}
-
-.footer-links ul li a:hover {
-  color: var(--brand-purple);
-}
-
-/* --- Contact Info --- */
-.footer-contact p,
-.footer-contact a {
-  color: var(--muted-gray);
-  font-size: 0.95rem;
-  line-height: 1.6;
-  text-decoration: none;
-}
-
-.footer-contact a:hover {
-  color: var(--brand-purple);
-}
-
-.footer-contact i {
-  color: var(--brand-purple);
-  margin-right: 0.6rem;
-}
+/* Footer styles moved to home.css for consistency across pages */
 
 /* --- Social Icons --- */
 .footer-socials {
@@ -392,10 +309,21 @@
     <div class="footer-links">
       <h4>Quick Links</h4>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="platform.html">Platform</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+      </ul>
+    </div>
+
+    <!-- Resources -->
+    <div class="footer-links">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="blog.html">Blog</a></li>
       </ul>
     </div>
 
@@ -411,23 +339,14 @@
         </div>
       </div>
 
-      <div class="footer-location">
-        <i class="fas fa-map-marker-alt"></i>
-        <div>
-          <p><strong>India Office</strong></p>
-          <p>B-361, Chittaranjan Park, New Delhi, 110019, India</p>
-        </div>
-      </div>
-
       <div class="footer-contact-info">
         <i class="fas fa-envelope"></i>
-        <a href="mailto:info@mycareshield.com">info@caretechr.com</a>
+        <a href="mailto:info@caretechr.com">info@caretechr.com</a>
       </div>
 
       <div class="footer-contact-info">
         <i class="fas fa-phone-alt"></i>
-        <p>+351 912 345 678 (Portugal)</p>
-        <p>+91 7303819745 (India)</p>
+        <p>+351 912 345 678</p>
       </div>
 
       <!-- Socials -->
@@ -435,12 +354,15 @@
         <a href="#"><i class="fab fa-facebook-f"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
       </div>
     </div>
   </div>
 
   <div class="footer-bottom">
     <p>© 2025 CareTechr. All rights reserved.</p>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Service</a>
   </div>
 </footer>
 <script src="navbar.js" defer></script>
